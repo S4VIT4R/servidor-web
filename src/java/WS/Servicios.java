@@ -12,19 +12,12 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-/**
- *
- * @author ferru
- */
+
 @WebService(serviceName = "Servicios")
 public class Servicios {
     
     Method method = new Method();
 
-    /**
-     * Web service operation
-     * @return 
-     */
     @WebMethod(operationName = "listar")
     public List<Persona> listar() {
         List<Persona> datos =method.listar();  
